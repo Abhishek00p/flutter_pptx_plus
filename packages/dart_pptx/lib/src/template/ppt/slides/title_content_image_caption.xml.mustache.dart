@@ -117,7 +117,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="2090500" y="9590500"/>
+            <a:off x="2090500" y="10090500"/>
             <a:ext cx="8019000" cy="619000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
