@@ -189,12 +189,14 @@ extension SlideTemplates on PowerPoint {
     TextValue? caption1,
     TextValue? caption2,
     bool? contentRight,
+    String notes ='',
+
   }) {
     if (caption1 != null &&
         caption1.lines
-                .map((e) => e.values.map(((e) => e.value)).join(' '))
-                .join('')
-                .length >
+            .map((e) => e.values.map(((e) => e.value)).join(' '))
+            .join('')
+            .length >
             100) {
       print('Caption 1 cant be longer then 100 chars: ${caption1.toString()}');
       throw Exception('Caption 1 cant be longer then 100 chars');
@@ -202,22 +204,24 @@ extension SlideTemplates on PowerPoint {
 
     if (caption2 != null &&
         caption2.lines
-                .map((e) => e.values.map(((e) => e.value)).join(' '))
-                .join('')
-                .length >
+            .map((e) => e.values.map(((e) => e.value)).join(' '))
+            .join('')
+            .length >
             100) {
       print('Caption 2 cant be longer then 100 chars: ${caption2.toString()}');
       throw Exception('Caption 2 cant be longer then 100 chars');
     }
 
     return addSlide(SlideTitleContentAndImages(
-      title: title,
-      content: content,
-      image1: image1,
-      image2: image2,
-      caption1: caption1,
-      caption2: caption2,
-      contentRight: contentRight,
+        title: title,
+        content: content,
+        image1: image1,
+        image2: image2,
+        caption1: caption1,
+        caption2: caption2,
+        contentRight: contentRight,
+        speakerNotes: TextValue.uniform(notes)
+
     ));
   }
 
@@ -227,12 +231,14 @@ extension SlideTemplates on PowerPoint {
     ImageReference? image,
     TextValue? caption,
     bool? contentRight,
+    String notes ='',
+
   }) {
     if (caption != null &&
         caption.lines
-                .map((e) => e.values.map(((e) => e.value)).join(' '))
-                .join('')
-                .length >
+            .map((e) => e.values.map(((e) => e.value)).join(' '))
+            .join('')
+            .length >
             100) {
       print('Caption cant be longer then 100 chars: ${caption.toString()}');
       throw Exception('Caption cant be longer then 100 chars');
@@ -242,7 +248,9 @@ extension SlideTemplates on PowerPoint {
         content: content,
         image: image,
         caption: caption,
-        contentRight: contentRight));
+        contentRight: contentRight
+        speakerNotes: TextValue.uniform(notes)
+    ));
   }
 
   Slide addTitleContentTwoImageCaptionSlide({
@@ -253,12 +261,13 @@ extension SlideTemplates on PowerPoint {
     TextValue? caption1,
     TextValue? caption2,
     bool? contentDown,
+    String notes ='',
   }) {
     if (caption1 != null &&
         caption1.lines
-                .map((e) => e.values.map(((e) => e.value)).join(' '))
-                .join('')
-                .length >
+            .map((e) => e.values.map(((e) => e.value)).join(' '))
+            .join('')
+            .length >
             100) {
       print('Caption 1 cant be longer then 100 chars: ${caption1.toString()}');
       throw Exception('Caption 1 cant be longer then 100 chars');
@@ -266,22 +275,23 @@ extension SlideTemplates on PowerPoint {
 
     if (caption2 != null &&
         caption2.lines
-                .map((e) => e.values.map(((e) => e.value)).join(' '))
-                .join('')
-                .length >
+            .map((e) => e.values.map(((e) => e.value)).join(' '))
+            .join('')
+            .length >
             100) {
       print('Caption 2 cant be longer then 100 chars: ${caption2.toString()}');
       throw Exception('Caption 2 cant be longer then 100 chars');
     }
 
     return addSlide(SlideTitleContentTwoImageCaption(
-      title: title,
-      content: content,
-      image1: image1,
-      image2: image2,
-      caption1: caption1,
-      caption2: caption2,
-      contentDown: contentDown,
+        title: title,
+        content: content,
+        image1: image1,
+        image2: image2,
+        caption1: caption1,
+        caption2: caption2,
+        contentDown: contentDown,
+        speakerNotes: TextValue.uniform(notes)
     ));
   }
 }
