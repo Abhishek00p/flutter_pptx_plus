@@ -248,7 +248,7 @@ extension SlideTemplates on PowerPoint {
         content: content,
         image: image,
         caption: caption,
-        contentRight: contentRight
+        contentRight: contentRight,
         speakerNotes: TextValue.uniform(notes)
     ));
   }
