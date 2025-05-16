@@ -31,7 +31,4 @@ Map<String, dynamic> _$StepItemToJson(StepItem instance) => <String, dynamic>{
       'id_text': instance.idText,
       'text': instance.text,
       'y': instance.y,
-      'id_arrow': instance.idArrow,
-      'arrow_y': instance.arrowY,
-      'isLast': instance.isLast,
     };

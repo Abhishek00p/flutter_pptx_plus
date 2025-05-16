@@ -1,12 +1,14 @@
 import 'package:dart_pptx/dart_pptx.dart';
 import 'package:json_annotation/json_annotation.dart';
 import '../classes/slide.dart';
-import '../template/ppt/slides/flow_steps.xml.mustache.dart'; // Make sure this is the correct path
+import '../template/ppt/slides/flow_steps.xml.mustache.dart'; // Ensure this path is correct
 part 'flow_steps.g.dart';
 
 @JsonSerializable(createFactory: false)
 class SlideStepFlow extends Slide {
   final List<StepItem> steps;
+  final TextValue? title;
+
   SlideStepFlow({
     super.name = 'Step Flow',
     List<StepItem>? steps,
@@ -14,32 +16,13 @@ class SlideStepFlow extends Slide {
     super.slideNumber,
     this.title,
   }) : steps = steps ?? _defaultSteps;
-  TextValue? title;
+
   static final List<StepItem> _defaultSteps = [
-    StepItem(
-      id: 3,
-      idText: 4,
-      text: 'Step One',
-      y: 1000000,
-      idArrow: 5,
-      arrowY: 1500000,
-    ),
-    StepItem(
-      id: 6,
-      idText: 7,
-      text: 'Step Two',
-      y: 2000000,
-      idArrow: 8,
-      arrowY: 2500000,
-    ),
-    StepItem(
-      id: 9,
-      idText: 10,
-      text: 'Step Three',
-      y: 3000000,
-      isLast: true,
-    ),
+    StepItem(id: 1, idText: 2, text: 'Step One', y: 1000000),
+    StepItem(id: 3, idText: 4, text: 'Step Two', y: 2000000),
+    StepItem(id: 5, idText: 6, text: 'Step Three', y: 3000000),
   ];
+
   @override
   int get layoutId => 1002; // Unique ID for this custom layout
 
@@ -48,6 +31,13 @@ class SlideStepFlow extends Slide {
 
   @override
   String get source => template;
+
+  // Method to dynamically calculate Y positions for steps
+  void calculateStepPositions() {
+    for (int i = 0; i < steps.length; i++) {
+      steps[i].y = (i * 1000000) + 300000; // Adjust Y position based on index
+    }
+  }
 }
 
 @JsonSerializable()
@@ -57,21 +47,13 @@ class StepItem {
     required this.idText,
     required this.text,
     required this.y,
-    this.idArrow,
-    this.arrowY,
-    this.isLast = false,
   });
 
   final int id;
   @JsonKey(name: 'id_text')
   final int idText;
   final String text;
-  final int y;
-  @JsonKey(name: 'id_arrow')
-  final int? idArrow;
-  @JsonKey(name: 'arrow_y')
-  final int? arrowY;
-  final bool isLast;
+  int y; // Make y mutable for dynamic adjustment
 
   Map<String, dynamic> toJson() => _$StepItemToJson(this);
 }

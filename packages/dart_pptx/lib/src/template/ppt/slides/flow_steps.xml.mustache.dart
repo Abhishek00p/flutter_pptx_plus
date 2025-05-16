@@ -9,33 +9,18 @@ const String template = r'''
   <p:cSld>
     {{>slide-background}}
     <p:spTree>
-      <!-- Group shape container -->
-      <p:nvGrpSpPr>
-        <p:cNvPr id="1" name=""/>
-        <p:cNvGrpSpPr/>
-        <p:nvPr/>
-      </p:nvGrpSpPr>
-      <p:grpSpPr>
-        <a:xfrm>
-          <a:off x="0" y="0"/>
-          <a:ext cx="0" cy="0"/>
-          <a:chOff x="0" y="0"/>
-          <a:chExt cx="0" cy="0"/>
-        </a:xfrm>
-      </p:grpSpPr>
-
       <!-- Title -->
       {{#title}}
       <p:sp>
         <p:nvSpPr>
-          <p:cNvPr id="2" name="Title"/>
+          <p:cNvPr id="1" name="Title"/>
           <p:cNvSpPr><a:spLocks noGrp="1"/></p:cNvSpPr>
           <p:nvPr/>
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="500000" y="200000"/>
-            <a:ext cx="8000000" cy="800000"/>
+            <a:off x="0" y="200000"/>
+            <a:ext cx="9144000" cy="800000"/>
           </a:xfrm>
         </p:spPr>
         <p:txBody>
@@ -43,7 +28,7 @@ const String template = r'''
           <a:lstStyle/>
           <a:p>
             <a:r>
-              <a:rPr lang="en-US" sz="2400" b="1"/>
+              <a:rPr lang="en-US" sz="2400"/>
               <a:t>{{title}}</a:t>
             </a:r>
             <a:endParaRPr lang="en-US"/>
@@ -52,64 +37,54 @@ const String template = r'''
       </p:sp>
       {{/title}}
 
-      <!-- Flow Items -->
+      <!-- Flow Steps -->
       {{#steps}}
       <p:sp>
         <p:nvSpPr>
-          <p:cNvPr id="{{id}}" name="IconBox"/>
+          <p:cNvPr id="{{@index}}" name="Step {{this}}"/>
           <p:cNvSpPr/>
           <p:nvPr/>
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="500000" y="{{y}}"/>
-            <a:ext cx="500000" cy="500000"/>
+            <a:off x="0" y="{{@index * 1000000 + 300000}}"/>
+            <a:ext cx="8000000" cy="500000"/>
           </a:xfrm>
           <a:prstGeom prst="rect"><a:avLst/></a:prstGeom>
-        </p:spPr>
-      </p:sp>
-
-      <p:sp>
-        <p:nvSpPr>
-          <p:cNvPr id="{{id_text}}" name="TextBox"/>
-          <p:cNvSpPr/>
-          <p:nvPr/>
-        </p:nvSpPr>
-        <p:spPr>
-          <a:xfrm>
-            <a:off x="1200000" y="{{y}}"/>
-            <a:ext cx="7000000" cy="500000"/>
-          </a:xfrm>
         </p:spPr>
         <p:txBody>
           <a:bodyPr/>
           <a:lstStyle/>
           <a:p>
             <a:r>
-              <a:rPr lang="en-US" sz="3200"/>
-              <a:t>{{text}}</a:t>
+              <a:rPr lang="en-US" sz="1800"/>
+              <a:t>{{this}}</a:t>
             </a:r>
             <a:endParaRPr lang="en-US"/>
           </a:p>
         </p:txBody>
       </p:sp>
+      {{/steps}}
 
-      {{#id_arrow}}
+      <!-- Arrows between steps -->
+      {{#steps}}
+      {{#if @last}}
+      {{else}}
       <p:sp>
         <p:nvSpPr>
-          <p:cNvPr id="{{id_arrow}}" name="DownArrow"/>
+          <p:cNvPr id="{{@index}}_arrow" name="Arrow {{@index}}"/>
           <p:cNvSpPr/>
           <p:nvPr/>
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4000000" y="{{arrow_y}}"/>
+            <a:off x="4000000" y="{{@index * 1000000 + 800000}}"/>
             <a:ext cx="400000" cy="300000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
         </p:spPr>
       </p:sp>
-      {{/id_arrow}}
+      {{/if}}
       {{/steps}}
 
     </p:spTree>
