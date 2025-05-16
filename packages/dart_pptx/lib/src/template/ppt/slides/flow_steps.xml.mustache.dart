@@ -78,13 +78,13 @@ const String template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4000000" y="{{y + 500000}}"/>
+            <a:off x="4000000" y="{{arrowY}}"/>
             <a:ext cx="400000" cy="300000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
         </p:spPr>
       </p:sp>
-      {{/if}}
+      {{/isLast}}
       {{/steps}}
 
     </p:spTree>
