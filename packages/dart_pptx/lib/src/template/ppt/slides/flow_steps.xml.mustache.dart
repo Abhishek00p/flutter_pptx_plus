@@ -1,11 +1,11 @@
-const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
+const String template = r'''
+<?xml version="1.0" encoding="UTF-8"?>
 <p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
        xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
        xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main"
        xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"
        xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"
        showMasterSp="1" showMasterPhAnim="1">
-
   <p:cSld>
     {{>slide-background}}
     <p:spTree>
@@ -94,31 +94,33 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
         </p:txBody>
       </p:sp>
 
-    {{#id_arrow}}
-<p:sp>
-  <p:nvSpPr>
-    <p:cNvPr id="{{id_arrow}}" name="DownArrow"/>
-    <p:cNvSpPr/>
-    <p:nvPr/>
-  </p:nvSpPr>
-  <p:spPr>
-    <a:xfrm>
-      <a:off x="4000000" y="{{arrow_y}}"/>
-      <a:ext cx="400000" cy="300000"/>
-    </a:xfrm>
-    <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
-  </p:spPr>
-</p:sp>
-{{/id_arrow}}
-
+      {{#id_arrow}}
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="{{id_arrow}}" name="DownArrow"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4000000" y="{{arrow_y}}"/>
+            <a:ext cx="400000" cy="300000"/>
+          </a:xfrm>
+          <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
+        </p:spPr>
+      </p:sp>
+      {{/id_arrow}}
       {{/steps}}
 
-      {{>speaker-notes}}
     </p:spTree>
+
+    {{>speaker-notes}}
+
   </p:cSld>
 
   <p:clrMapOvr>
     <a:masterClrMapping/>
   </p:clrMapOvr>
 </p:sld>
+
 ''';
