@@ -28,10 +28,10 @@ Map<String, dynamic> _$SlideStepFlowToJson(SlideStepFlow instance) =>
 
 Map<String, dynamic> _$StepItemToJson(StepItem instance) => <String, dynamic>{
       'id': instance.id,
-      'idText': instance.idText,
+      'id_text': instance.idText,
       'text': instance.text,
       'y': instance.y,
-      'idArrow': instance.idArrow,
+      'id_arrow': instance.idArrow,
       'arrowY': instance.arrowY,
       'isLast': instance.isLast,
     };
