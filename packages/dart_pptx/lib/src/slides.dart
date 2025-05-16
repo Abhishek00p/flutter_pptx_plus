@@ -201,15 +201,15 @@ extension SlideTemplates on PowerPoint {
     return addSlide(
       SlideStepFlow(
           title: title,
-          steps: List.generate(
-              5,
-              (i) => StepItem(
-                  idArrow: i >= 4 ? null : i + 20,
-                  arrowY: i >= 4 ? null : 100000 * i + 70000,
-                  id: i,
-                  idText: i + 10,
-                  text: 'index $i',
-                  y: 100000 * i)),
+          steps: [
+            StepItem(
+                idArrow: 20,
+                arrowY: 70000,
+                id: 9,
+                idText: 10,
+                text: 'index 9',
+                y: 100000)
+          ],
           speakerNotes: TextValue.uniform(notes)),
     );
   }
