@@ -202,9 +202,25 @@ extension SlideTemplates on PowerPoint {
       SlideStepFlow(
           title: title ?? TextValue.uniform('Temp Title'),
           steps: [
-            StepItem(id: 1, idText: 2, text: 'Step One', y: 0),
-            StepItem(id: 3, idText: 4, text: 'Step Two', y: 0),
-            StepItem(id: 5, idText: 6, text: 'Step Three', y: 0, isLast: true),
+            StepItem(
+                id: 1,
+                idText: 2,
+                text: 'Step One',
+                y: 1000000,
+                arrowY: 1500000),
+            StepItem(
+                id: 3,
+                idText: 4,
+                text: 'Step Two',
+                y: 2000000,
+                arrowY: 2500000),
+            StepItem(
+                id: 5,
+                idText: 6,
+                text: 'Step Three',
+                y: 3000000,
+                arrowY: null,
+                isLast: true), // Mark
           ],
           speakerNotes: TextValue.uniform(notes)),
     );

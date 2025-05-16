@@ -68,8 +68,7 @@ const String template = r'''
 
       <!-- Arrows between steps -->
       {{#steps}}
-      {{#isLast}}
-      {{else}}
+      {{^isLast}}
       <p:sp>
         <p:nvSpPr>
           <p:cNvPr id="{{id}}_arrow" name="Arrow {{id}}"/>

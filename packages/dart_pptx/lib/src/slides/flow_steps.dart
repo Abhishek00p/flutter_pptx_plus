@@ -18,9 +18,15 @@ class SlideStepFlow extends Slide {
   }) : steps = steps ?? _defaultSteps;
 
   static final List<StepItem> _defaultSteps = [
-    StepItem(id: 1, idText: 2, text: 'Step One', y: 1000000),
-    StepItem(id: 3, idText: 4, text: 'Step Two', y: 2000000),
-    StepItem(id: 5, idText: 6, text: 'Step Three', y: 3000000),
+    StepItem(id: 1, idText: 2, text: 'Step One', y: 1000000, arrowY: 1500000),
+    StepItem(id: 3, idText: 4, text: 'Step Two', y: 2000000, arrowY: 2500000),
+    StepItem(
+        id: 5,
+        idText: 6,
+        text: 'Step Three',
+        y: 3000000,
+        arrowY: null,
+        isLast: true), // Mark
   ];
 
   @override
@@ -48,6 +54,7 @@ class StepItem {
     required this.text,
     required this.y,
     this.isLast = false,
+    this.arrowY,
   });
 
   final int id;
@@ -56,6 +63,6 @@ class StepItem {
   final String text;
   bool isLast;
   int y; // Make y mutable for dynamic adjustment
-
+  int? arrowY;
   Map<String, dynamic> toJson() => _$StepItemToJson(this);
 }
