@@ -200,7 +200,7 @@ extension SlideTemplates on PowerPoint {
   }) {
     return addSlide(
       SlideStepFlow(
-          title: title,
+          title: title ?? TextValue.uniform('Temp Title'),
           steps: [
             StepItem(
                 isLast: true,
