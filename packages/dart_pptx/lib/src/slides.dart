@@ -203,6 +203,7 @@ extension SlideTemplates on PowerPoint {
           title: title,
           steps: [
             StepItem(
+                isLast: true,
                 idArrow: 20,
                 arrowY: 70000,
                 id: 9,
