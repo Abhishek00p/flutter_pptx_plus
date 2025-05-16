@@ -204,7 +204,7 @@ extension SlideTemplates on PowerPoint {
           steps: [
             StepItem(id: 1, idText: 2, text: 'Step One', y: 0),
             StepItem(id: 3, idText: 4, text: 'Step Two', y: 0),
-            StepItem(id: 5, idText: 6, text: 'Step Three', y: 0),
+            StepItem(id: 5, idText: 6, text: 'Step Three', y: 0, isLast: true),
           ],
           speakerNotes: TextValue.uniform(notes)),
     );

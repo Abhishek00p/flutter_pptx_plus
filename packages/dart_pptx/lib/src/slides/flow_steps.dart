@@ -47,12 +47,14 @@ class StepItem {
     required this.idText,
     required this.text,
     required this.y,
+    this.isLast = false,
   });
 
   final int id;
   @JsonKey(name: 'id_text')
   final int idText;
   final String text;
+  bool isLast;
   int y; // Make y mutable for dynamic adjustment
 
   Map<String, dynamic> toJson() => _$StepItemToJson(this);
