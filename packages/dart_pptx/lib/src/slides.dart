@@ -200,6 +200,7 @@ extension SlideTemplates on PowerPoint {
   }) {
     return addSlide(
       SlideStepFlow(
+          title: title,
           steps: List.generate(
               5,
               (i) => StepItem(

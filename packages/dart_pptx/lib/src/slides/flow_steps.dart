@@ -1,3 +1,4 @@
+import 'package:dart_pptx/dart_pptx.dart';
 import 'package:json_annotation/json_annotation.dart';
 import '../classes/slide.dart';
 import '../template/ppt/slides/flow_steps.xml.mustache.dart'; // Make sure this is the correct path
@@ -10,8 +11,9 @@ class SlideStepFlow extends Slide {
     required this.steps,
     super.speakerNotes,
     super.slideNumber,
+    this.title,
   });
-
+  TextValue? title;
   final List<StepItem> steps;
 
   @override
