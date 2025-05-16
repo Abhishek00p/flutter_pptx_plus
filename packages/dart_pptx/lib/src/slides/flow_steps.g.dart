@@ -20,8 +20,8 @@ Map<String, dynamic> _$SlideStepFlowToJson(SlideStepFlow instance) =>
       'notesId': instance.notesId,
       'background': instance.background.toJson(),
       'hasNotes': instance.hasNotes,
-      'title': instance.title?.toJson(),
       'steps': instance.steps.map((e) => e.toJson()).toList(),
+      'title': instance.title?.toJson(),
       'layoutId': instance.layoutId,
       'source': instance.source,
     };

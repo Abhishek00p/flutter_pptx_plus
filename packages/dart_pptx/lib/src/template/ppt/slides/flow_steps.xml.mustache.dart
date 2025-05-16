@@ -43,7 +43,7 @@ const String template = r'''
           <a:lstStyle/>
           <a:p>
             <a:r>
-              <a:rPr lang="en-US" sz="4400" b="1"/>
+              <a:rPr lang="en-US" sz="2400" b="1"/>
               <a:t>{{title}}</a:t>
             </a:r>
             <a:endParaRPr lang="en-US"/>
