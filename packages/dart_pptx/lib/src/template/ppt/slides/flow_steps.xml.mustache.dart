@@ -41,13 +41,13 @@ const String template = r'''
       {{#steps}}
       <p:sp>
         <p:nvSpPr>
-          <p:cNvPr id="{{@index}}" name="Step {{this}}"/>
+          <p:cNvPr id="{{id}}" name="Step {{text}}"/>
           <p:cNvSpPr/>
           <p:nvPr/>
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="0" y="{{@index * 1000000 + 300000}}"/>
+            <a:off x="0" y="{{y}}"/>
             <a:ext cx="8000000" cy="500000"/>
           </a:xfrm>
           <a:prstGeom prst="rect"><a:avLst/></a:prstGeom>
@@ -58,7 +58,7 @@ const String template = r'''
           <a:p>
             <a:r>
               <a:rPr lang="en-US" sz="1800"/>
-              <a:t>{{this}}</a:t>
+              <a:t>{{text}}</a:t>
             </a:r>
             <a:endParaRPr lang="en-US"/>
           </a:p>
@@ -68,17 +68,17 @@ const String template = r'''
 
       <!-- Arrows between steps -->
       {{#steps}}
-      {{#if @last}}
+      {{#if isLast}}
       {{else}}
       <p:sp>
         <p:nvSpPr>
-          <p:cNvPr id="{{@index}}_arrow" name="Arrow {{@index}}"/>
+          <p:cNvPr id="{{id}}_arrow" name="Arrow {{id}}"/>
           <p:cNvSpPr/>
           <p:nvPr/>
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4000000" y="{{@index * 1000000 + 800000}}"/>
+            <a:off x="4000000" y="{{y + 500000}}"/>
             <a:ext cx="400000" cy="300000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
