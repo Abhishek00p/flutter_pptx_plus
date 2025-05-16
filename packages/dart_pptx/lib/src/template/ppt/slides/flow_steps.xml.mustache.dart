@@ -94,21 +94,23 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
         </p:txBody>
       </p:sp>
 
-      <!-- Arrow -->
-      <p:sp>
-        <p:nvSpPr>
-          <p:cNvPr id="{{id_arrow}}" name="DownArrow"/>
-          <p:cNvSpPr/>
-          <p:nvPr/>
-        </p:nvSpPr>
-        <p:spPr>
-          <a:xfrm>
-            <a:off x="4000000" y="{{arrow_y}}"/>
-            <a:ext cx="400000" cy="300000"/>
-          </a:xfrm>
-          <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
-        </p:spPr>
-      </p:sp>
+    {{#id_arrow}}
+<p:sp>
+  <p:nvSpPr>
+    <p:cNvPr id="{{id_arrow}}" name="DownArrow"/>
+    <p:cNvSpPr/>
+    <p:nvPr/>
+  </p:nvSpPr>
+  <p:spPr>
+    <a:xfrm>
+      <a:off x="4000000" y="{{arrow_y}}"/>
+      <a:ext cx="400000" cy="300000"/>
+    </a:xfrm>
+    <a:prstGeom prst="downArrow"><a:avLst/></a:prstGeom>
+  </p:spPr>
+</p:sp>
+{{/id_arrow}}
+
       {{/steps}}
 
       {{>speaker-notes}}
