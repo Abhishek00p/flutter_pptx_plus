@@ -204,7 +204,11 @@ extension SlideTemplates on PowerPoint {
           steps: List.generate(
               5,
               (i) => StepItem(
-                  id: i, idText: i + 10, text: 'index $i', y: 100000 * i)),
+                  idArrow: i + 20,
+                  id: i,
+                  idText: i + 10,
+                  text: 'index $i',
+                  y: 100000 * i)),
           speakerNotes: TextValue.uniform(notes)),
     );
   }
