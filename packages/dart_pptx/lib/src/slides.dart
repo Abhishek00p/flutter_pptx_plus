@@ -204,7 +204,8 @@ extension SlideTemplates on PowerPoint {
           steps: List.generate(
               5,
               (i) => StepItem(
-                  idArrow: i + 20,
+                  idArrow: i >= 4 ? null : i + 20,
+                  arrowY: i >= 4 ? null : 100000 * i + 70000,
                   id: i,
                   idText: i + 10,
                   text: 'index $i',
