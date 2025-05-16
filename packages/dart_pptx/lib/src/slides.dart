@@ -19,6 +19,8 @@ import 'slides/title.dart';
 import 'slides/title_content_and_images.dart';
 import 'slides/title_content_image_caption.dart';
 import 'slides/title_content_two_image_caption.dart';
+import 'slides/center_title.dart';
+import 'slides/flow_steps.dart';
 
 export 'slides/agenda.dart';
 export 'slides/big_fact.dart';
@@ -38,6 +40,8 @@ export 'slides/title.dart';
 export 'slides/title_content_and_images.dart';
 export 'slides/title_content_image_caption.dart';
 export 'slides/title_content_two_image_caption.dart';
+export 'slides/center_title.dart';
+export 'slides/flow_steps.dart';
 
 extension SlideTemplates on PowerPoint {
   Slide addTitleSlide({
@@ -181,6 +185,29 @@ extension SlideTemplates on PowerPoint {
     );
   }
 
+  Slide addCenterTitleSlide(
+    TextValue? title, {
+    String notes = '',
+  }) {
+    return addSlide(
+      CenterTitle(title: title, speakerNotes: TextValue.uniform(notes)),
+    );
+  }
+
+  Slide addFlowStepsSlide(
+    TextValue? title, {
+    String notes = '',
+  }) {
+    return addSlide(
+      SlideStepFlow(
+          steps: List.generate(
+              5,
+              (i) => StepItem(
+                  id: i, idText: i + 10, text: 'index $i', y: 100000 * i)),
+          speakerNotes: TextValue.uniform(notes)),
+    );
+  }
+
   Slide addTitleContentAndImagesSlide({
     TextValue? title,
     TextValue? content,
@@ -189,14 +216,13 @@ extension SlideTemplates on PowerPoint {
     TextValue? caption1,
     TextValue? caption2,
     bool? contentRight,
-    String notes ='',
-
+    String notes = '',
   }) {
     if (caption1 != null &&
         caption1.lines
-            .map((e) => e.values.map(((e) => e.value)).join(' '))
-            .join('')
-            .length >
+                .map((e) => e.values.map(((e) => e.value)).join(' '))
+                .join('')
+                .length >
             100) {
       print('Caption 1 cant be longer then 100 chars: ${caption1.toString()}');
       throw Exception('Caption 1 cant be longer then 100 chars');
@@ -204,9 +230,9 @@ extension SlideTemplates on PowerPoint {
 
     if (caption2 != null &&
         caption2.lines
-            .map((e) => e.values.map(((e) => e.value)).join(' '))
-            .join('')
-            .length >
+                .map((e) => e.values.map(((e) => e.value)).join(' '))
+                .join('')
+                .length >
             100) {
       print('Caption 2 cant be longer then 100 chars: ${caption2.toString()}');
       throw Exception('Caption 2 cant be longer then 100 chars');
@@ -220,9 +246,7 @@ extension SlideTemplates on PowerPoint {
         caption1: caption1,
         caption2: caption2,
         contentRight: contentRight,
-        speakerNotes: TextValue.uniform(notes)
-
-    ));
+        speakerNotes: TextValue.uniform(notes)));
   }
 
   Slide addTitleContentAndOneImageSlide({
@@ -231,14 +255,13 @@ extension SlideTemplates on PowerPoint {
     ImageReference? image,
     TextValue? caption,
     bool? contentRight,
-    String notes ='',
-
+    String notes = '',
   }) {
     if (caption != null &&
         caption.lines
-            .map((e) => e.values.map(((e) => e.value)).join(' '))
-            .join('')
-            .length >
+                .map((e) => e.values.map(((e) => e.value)).join(' '))
+                .join('')
+                .length >
             100) {
       print('Caption cant be longer then 100 chars: ${caption.toString()}');
       throw Exception('Caption cant be longer then 100 chars');
@@ -249,8 +272,7 @@ extension SlideTemplates on PowerPoint {
         image: image,
         caption: caption,
         contentRight: contentRight,
-        speakerNotes: TextValue.uniform(notes)
-    ));
+        speakerNotes: TextValue.uniform(notes)));
   }
 
   Slide addTitleContentTwoImageCaptionSlide({
@@ -261,13 +283,13 @@ extension SlideTemplates on PowerPoint {
     TextValue? caption1,
     TextValue? caption2,
     bool? contentDown,
-    String notes ='',
+    String notes = '',
   }) {
     if (caption1 != null &&
         caption1.lines
-            .map((e) => e.values.map(((e) => e.value)).join(' '))
-            .join('')
-            .length >
+                .map((e) => e.values.map(((e) => e.value)).join(' '))
+                .join('')
+                .length >
             100) {
       print('Caption 1 cant be longer then 100 chars: ${caption1.toString()}');
       throw Exception('Caption 1 cant be longer then 100 chars');
@@ -275,9 +297,9 @@ extension SlideTemplates on PowerPoint {
 
     if (caption2 != null &&
         caption2.lines
-            .map((e) => e.values.map(((e) => e.value)).join(' '))
-            .join('')
-            .length >
+                .map((e) => e.values.map(((e) => e.value)).join(' '))
+                .join('')
+                .length >
             100) {
       print('Caption 2 cant be longer then 100 chars: ${caption2.toString()}');
       throw Exception('Caption 2 cant be longer then 100 chars');
@@ -291,7 +313,6 @@ extension SlideTemplates on PowerPoint {
         caption1: caption1,
         caption2: caption2,
         contentDown: contentDown,
-        speakerNotes: TextValue.uniform(notes)
-    ));
+        speakerNotes: TextValue.uniform(notes)));
   }
 }

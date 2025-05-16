@@ -10,11 +10,8 @@ import 'template/template.dart';
 
 class PowerPoint {
   var context = PresentationContext();
-  var layout = Layout(
-    type: 'custom',
-    width: 24384000,
-    height: 13716000,
-  );
+  var layout = Layout.screen16x9();
+
   var slides = <Slide>[];
 
   bool _showSlideNumbers = false;
@@ -38,6 +35,7 @@ class PowerPoint {
     this.layout = layout;
   }
 
+  void init() {}
   Slide addSlide(
     Slide slide, {
     TextValue? notes,

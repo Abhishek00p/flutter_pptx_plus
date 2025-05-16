@@ -20,5 +20,9 @@ class SlideBlank extends Slide {
   Map<String, dynamic> toJson() => _$SlideBlankToJson(this);
 
   @override
-  String get source => template;
+  String get source => _source ?? template;
+
+  String? _source;
+
+  set source(String value) => _source = value;
 }
