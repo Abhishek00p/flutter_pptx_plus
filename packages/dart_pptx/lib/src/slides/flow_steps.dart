@@ -6,16 +6,40 @@ part 'flow_steps.g.dart';
 
 @JsonSerializable(createFactory: false)
 class SlideStepFlow extends Slide {
+  final List<StepItem> steps;
   SlideStepFlow({
     super.name = 'Step Flow',
-    required this.steps,
+    List<StepItem>? steps,
     super.speakerNotes,
     super.slideNumber,
     this.title,
-  });
+  }) : steps = steps ?? _defaultSteps;
   TextValue? title;
-  final List<StepItem> steps;
-
+  static final List<StepItem> _defaultSteps = [
+    StepItem(
+      id: 3,
+      idText: 4,
+      text: 'Step One',
+      y: 1000000,
+      idArrow: 5,
+      arrowY: 1500000,
+    ),
+    StepItem(
+      id: 6,
+      idText: 7,
+      text: 'Step Two',
+      y: 2000000,
+      idArrow: 8,
+      arrowY: 2500000,
+    ),
+    StepItem(
+      id: 9,
+      idText: 10,
+      text: 'Step Three',
+      y: 3000000,
+      isLast: true,
+    ),
+  ];
   @override
   int get layoutId => 1002; // Unique ID for this custom layout
 
