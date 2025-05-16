@@ -45,6 +45,7 @@ class StepItem {
   final int y;
   @JsonKey(name: 'id_arrow')
   final int? idArrow;
+  @JsonKey(name: 'arrow_y')
   final int? arrowY;
   final bool isLast;
 
