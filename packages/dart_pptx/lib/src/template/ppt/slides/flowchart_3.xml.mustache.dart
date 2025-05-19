@@ -70,7 +70,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4800000" y="2600000"/>
+            <a:off x="4800000" y="2700000"/>
             <a:ext cx="400000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow">
@@ -91,7 +91,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="3100000"/>
+            <a:off x="3000000" y="3200000"/>
             <a:ext cx="4000000" cy="600000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -118,7 +118,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4800000" y="3100000"/>
+            <a:off x="4800000" y="3900000"/>
             <a:ext cx="400000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow">
@@ -139,7 +139,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="3600000"/>
+            <a:off x="3000000" y="4400000"/>
             <a:ext cx="4000000" cy="600000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
