@@ -65,29 +65,36 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:extLst>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
-                    <a:p>
-                        <a:pPr lvl="4" marL="0" indent="2660904" algn="ctr" defTabSz="2365248">
-                            <a:lnSpc>
-                                <a:spcPct val="80000"/>
-                            </a:lnSpc>
-                            <a:spcBef>
-                                <a:spcPts val="0"/>
-                            </a:spcBef>
-                            <a:buSzTx/>
-                            <a:buNone/>
-                            <a:defRPr sz="21728">
-                                <a:latin typeface="Canela Bold"/>
-                                <a:ea typeface="Canela Bold"/>
-                                <a:cs typeface="Canela Bold"/>
-                                <a:sym typeface="Canela Bold"/>
-                            </a:defRPr>
-                        </a:pPr>
-                        {{#fact}}
-                        {{>text-line}}
-                        {{/fact}}
-                    </a:p>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="2400"/>
+                    </a:defPPr>
+                    {{#fact}}
+                    {{>text-value}}
+                    {{/fact}}
+                </p:txBody>
+            </p:sp>
+            <p:sp>
+                <p:nvSpPr>
+                    <p:cNvPr id="{{new-id}}" name="Caption"/>
+                    <p:cNvSpPr txBox="1"/>
+                    <p:nvPr>
+                        <p:ph type="body" idx="22"/>
+                    </p:nvPr>
+                </p:nvSpPr>
+                <p:spPr>
+                    <a:prstGeom prst="rect">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+                <p:txBody>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="1400"/>
+                    </a:defPPr>
+                    {{#caption}}
+                    {{>text-value}}
+                    {{/caption}}
                 </p:txBody>
             </p:sp>
             {{>speaker-notes}}

@@ -42,12 +42,10 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle>
-                        <a:lvl1pPr defTabSz="2267711">
-                            <a:defRPr sz="2400"/>
-                        </a:lvl1pPr>
-                    </a:lstStyle>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="2400"/>
+                    </a:defPPr>
                     {{#title}}
                     {{>text-value}}
                     {{/title}}
@@ -175,8 +173,10 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:extLst>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="1400"/>
+                    </a:defPPr>
                     {{#bullets}}
                     {{>text-value}}
                     {{/bullets}}

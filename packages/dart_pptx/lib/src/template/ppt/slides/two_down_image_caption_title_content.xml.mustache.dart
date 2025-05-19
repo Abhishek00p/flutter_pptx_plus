@@ -35,8 +35,8 @@ const template = r'''
           </a:xfrm>
         </p:spPr>
         <p:txBody>
-          <a:bodyPr wrap="square"/>
-          <a:defPPr>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="l">
             <a:defRPr sz="2400"/>
           </a:defPPr>
           {{#title}}
@@ -94,10 +94,8 @@ const template = r'''
           </a:prstGeom>
         </p:spPr>
         <p:txBody>
-          <a:bodyPr>
-            <a:noAutofit/>
-          </a:bodyPr>
-          <a:defPPr>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="l">
             <a:defRPr sz="800"/>
           </a:defPPr>
           {{#caption1}}
@@ -155,10 +153,8 @@ const template = r'''
           </a:prstGeom>
         </p:spPr>
         <p:txBody>
-          <a:bodyPr>
-            <a:noAutofit/>
-          </a:bodyPr>
-          <a:defPPr>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="l">
             <a:defRPr sz="800"/>
           </a:defPPr>
           {{#caption2}}
@@ -188,8 +184,8 @@ const template = r'''
           </a:prstGeom>
         </p:spPr>
         <p:txBody>
-          <a:bodyPr wrap="square"/>
-          <a:defPPr>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="l">
             <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#content}}

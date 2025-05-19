@@ -67,8 +67,10 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="2400"/>
+                    </a:defPPr>
                     {{#title}}
                     {{>text-value}}
                     {{/title}}
@@ -122,6 +124,29 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     {{#author}}
                     {{>text-value}}
                     {{/author}}
+                </p:txBody>
+            </p:sp>
+            <p:sp>
+                <p:nvSpPr>
+                    <p:cNvPr id="{{new-id}}" name="PRESENTATION CAPTION"/>
+                    <p:cNvSpPr txBox="1"/>
+                    <p:nvPr>
+                        <p:ph type="body" idx="23"/>
+                    </p:nvPr>
+                </p:nvSpPr>
+                <p:spPr>
+                    <a:prstGeom prst="rect">
+                        <a:avLst/>
+                    </a:prstGeom>
+                </p:spPr>
+                <p:txBody>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="800"/>
+                    </a:defPPr>
+                    {{#caption}}
+                    {{>text-value}}
+                    {{/caption}}
                 </p:txBody>
             </p:sp>
             {{>speaker-notes}}

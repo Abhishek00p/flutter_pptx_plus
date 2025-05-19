@@ -53,6 +53,15 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
             </p:pic>
+            <p:txBody>
+              <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+              <a:defPPr algn="l">
+                <a:defRPr sz="800"/>
+              </a:defPPr>
+              {{#caption}}
+              {{>text-value}}
+              {{/caption}}
+            </p:txBody>
             {{>speaker-notes}}
         </p:spTree>
     </p:cSld>

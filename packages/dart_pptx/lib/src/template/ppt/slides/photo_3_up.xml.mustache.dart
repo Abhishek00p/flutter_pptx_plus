@@ -111,6 +111,33 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
             </p:pic>
+            <p:txBody>
+                <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                <a:defPPr algn="l">
+                    <a:defRPr sz="800"/>
+                </a:defRPr>
+                {{#caption1}}
+                {{>text-value}}
+                {{/caption1}}
+            </p:txBody>
+            <p:txBody>
+                <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                <a:defPPr algn="l">
+                    <a:defRPr sz="800"/>
+                </a:defRPr>
+                {{#caption2}}
+                {{>text-value}}
+                {{/caption2}}
+            </p:txBody>
+            <p:txBody>
+                <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                <a:defPPr algn="l">
+                    <a:defRPr sz="800"/>
+                </a:defRPr>
+                {{#caption3}}
+                {{>text-value}}
+                {{/caption3}}
+            </p:txBody>
             {{>speaker-notes}}
         </p:spTree>
     </p:cSld>

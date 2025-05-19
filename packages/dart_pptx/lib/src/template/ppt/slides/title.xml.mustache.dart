@@ -63,9 +63,11 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
-                    {{#title}}}
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="2400"/>
+                    </a:defPPr>
+                    {{#title}}
                     {{>text-value}}
                     {{/title}}
                 </p:txBody>

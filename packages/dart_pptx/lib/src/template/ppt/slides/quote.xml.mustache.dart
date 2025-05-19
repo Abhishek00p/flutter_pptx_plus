@@ -38,8 +38,10 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="2400"/>
+                    </a:defPPr>
                     {{#attribution}}
                     {{>text-value}}
                     {{/attribution}}
@@ -65,29 +67,13 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:extLst>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
-                    <a:p>
-                        <a:pPr lvl="4" marL="0" indent="2743200" algn="ctr" defTabSz="2438400">
-                            <a:lnSpc>
-                                <a:spcPct val="80000"/>
-                            </a:lnSpc>
-                            <a:spcBef>
-                                <a:spcPts val="0"/>
-                            </a:spcBef>
-                            <a:buSzTx/>
-                            <a:buNone/>
-                            <a:defRPr sz="2400">
-                                <a:latin typeface="Canela Bold"/>
-                                <a:ea typeface="Canela Bold"/>
-                                <a:cs typeface="Canela Bold"/>
-                                <a:sym typeface="Canela Bold"/>
-                            </a:defRPr>
-                        </a:pPr>
-                        {{#quote}}
-                        {{>text-line}}
-                        {{/quote}}
-                    </a:p>
+                    <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+                    <a:defPPr algn="l">
+                        <a:defRPr sz="1400"/>
+                    </a:defPPr>
+                    {{#quote}}
+                    {{>text-value}}
+                    {{/quote}}
                 </p:txBody>
             </p:sp>
             {{>speaker-notes}}

@@ -94,10 +94,8 @@ const template = r'''
           </a:prstGeom>
         </p:spPr>
         <p:txBody>
-          <a:bodyPr>
-            <a:noAutofit/>
-          </a:bodyPr>
-          <a:defPPr>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="l">
             <a:defRPr sz="800"/>
           </a:defPPr>
           {{#caption1}}
@@ -155,10 +153,8 @@ const template = r'''
           </a:prstGeom>
         </p:spPr>
         <p:txBody>
-          <a:bodyPr>
-            <a:noAutofit/>
-          </a:bodyPr>
-          <a:defPPr>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="l">
             <a:defRPr sz="800"/>
           </a:defPPr>
           {{#caption2}}
