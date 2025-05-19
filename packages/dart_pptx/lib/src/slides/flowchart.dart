@@ -13,13 +13,21 @@ class SlideFlowchart extends Slide {
   SlideFlowchart({
     super.name = 'Flowchart',
     this.title,
-    this.bullets = const [],
+    required this.bullet1,
+    required this.bullet2,
+    this.bullet3,
+    this.bullet4,
+    this.bullet5,
     super.speakerNotes,
     super.slideNumber,
   });
 
   TextValue? title;
-  List<TextValue> bullets;
+  TextValue bullet1;
+  TextValue bullet2;
+  TextValue? bullet3;
+  TextValue? bullet4;
+  TextValue? bullet5;
 
   @override
   int get layoutId => 4;
@@ -28,11 +36,11 @@ class SlideFlowchart extends Slide {
   Map<String, dynamic> toJson() => _$SlideFlowchartToJson(this);
 
   @override
-  String get source => bullets.length > 5
+  String get source => bullet5 != null
       ? flowchart5.template
-      : bullets.length > 3
+      : bullet4 != null
           ? flowchart4.template
-          : bullets.length > 1
+          : bullet3 != null
               ? flowchart3.template
               : flowchart2.template;
 }

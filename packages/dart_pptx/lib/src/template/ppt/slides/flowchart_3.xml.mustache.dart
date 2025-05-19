@@ -105,6 +105,7 @@ const template = r'''
           {{/bullet2}}
         </p:txBody>
       </p:sp>
+      
 
     </p:spTree>
   </p:cSld>

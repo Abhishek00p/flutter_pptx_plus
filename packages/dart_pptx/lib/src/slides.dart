@@ -300,7 +300,11 @@ extension SlideTemplates on PowerPoint {
   }) =>
       addSlide(SlideFlowchart(
         title: title,
-        bullets: bullets,
+        bullet1: bullets[0],
+        bullet2: bullets[1],
+        bullet3: bullets.length > 2 ? bullets[2] : null,
+        bullet4: bullets.length > 3 ? bullets[3] : null,
+        bullet5: bullets.length > 4 ? bullets[4] : null,
         speakerNotes: TextValue.uniform(notes),
       ));
 }

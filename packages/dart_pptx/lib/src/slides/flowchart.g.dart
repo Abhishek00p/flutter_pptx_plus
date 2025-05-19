@@ -21,7 +21,11 @@ Map<String, dynamic> _$SlideFlowchartToJson(SlideFlowchart instance) =>
       'background': instance.background.toJson(),
       'hasNotes': instance.hasNotes,
       'title': instance.title?.toJson(),
-      'bullets': instance.bullets.map((e) => e.toJson()).toList(),
+      'bullet1': instance.bullet1.toJson(),
+      'bullet2': instance.bullet2.toJson(),
+      'bullet3': instance.bullet3?.toJson(),
+      'bullet4': instance.bullet4?.toJson(),
+      'bullet5': instance.bullet5?.toJson(),
       'layoutId': instance.layoutId,
       'source': instance.source,
     };
