@@ -304,7 +304,6 @@ extension SlideTemplates on PowerPoint {
         bullet2: bullets[1],
         bullet3: bullets.length > 2 ? bullets[2] : null,
         bullet4: bullets.length > 3 ? bullets[3] : null,
-        bullet5: bullets.length > 4 ? bullets[4] : null,
         speakerNotes: TextValue.uniform(notes),
       ));
 }

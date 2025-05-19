@@ -25,7 +25,6 @@ Map<String, dynamic> _$SlideFlowchartToJson(SlideFlowchart instance) =>
       'bullet2': instance.bullet2.toJson(),
       'bullet3': instance.bullet3?.toJson(),
       'bullet4': instance.bullet4?.toJson(),
-      'bullet5': instance.bullet5?.toJson(),
       'layoutId': instance.layoutId,
       'source': instance.source,
     };
