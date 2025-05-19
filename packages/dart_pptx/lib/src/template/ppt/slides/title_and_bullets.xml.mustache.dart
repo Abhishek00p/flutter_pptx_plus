@@ -33,12 +33,18 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </p:nvPr>
                 </p:nvSpPr>
                 <p:spPr>
+                    <a:xfrm>
+                        <a:off x="1219200" y="685800"/>
+                        <a:ext cx="9753600" cy="1371600"/>
+                    </a:xfrm>
                     <a:prstGeom prst="rect">
                         <a:avLst/>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
+                    <a:bodyPr lIns="50800" tIns="50800" rIns="50800" bIns="50800" anchor="ctr">
+                        <a:normAutofit fontScale="100000" lnSpcReduction="0"/>
+                    </a:bodyPr>
                     <a:lstStyle/>
                     {{#title}}
                     {{>text-value}}
