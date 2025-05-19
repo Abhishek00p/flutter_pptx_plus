@@ -70,7 +70,11 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:nvPicPr>
                 <p:blipFill>
                     <a:blip r:embed="rId{{imageId1}}">
-                        <a:extLst/>
+                        <a:extLst>
+                            <a:ext uri="{28A0092B-C50C-407E-A947-70E740481C1C}">
+                                <a14:useLocalDpi val="0" xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main"/>
+                            </a:ext>
+                        </a:extLst>
                     </a:blip>
                     <a:stretch>
                         <a:fillRect/>
@@ -84,6 +88,12 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:prstGeom prst="rect">
                         <a:avLst/>
                     </a:prstGeom>
+                    <a:extLst>
+                        <a:ext uri="{C572A759-6A51-4108-AA02-DFA0A04FC94B}">
+                            <ma14:wrappingTextBoxFlag val="1"
+                                xmlns:ma14="http://schemas.microsoft.com/office/mac/drawingml/2011/main"/>
+                        </a:ext>
+                    </a:extLst>
                 </p:spPr>
             </p:pic>
             <p:sp>
