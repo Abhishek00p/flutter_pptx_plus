@@ -95,8 +95,8 @@ const template = r'''
         </p:blipFill>
         <p:spPr>
           <a:xfrm>
-            <a:off x="2090500" y="4290500"/>
-            <a:ext cx="8019000" cy="5619000"/>
+            <a:off x="16090500" y="2290500"/>
+            <a:ext cx="4019000" cy="2619000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
             <a:avLst/>
