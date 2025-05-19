@@ -128,7 +128,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                             </a:spcAft>
                             <a:buSzTx/>
                             <a:buNone/>
-                            <a:defRPr spc="-100">
+                            <a:defRPr spc="-100" sz="800">
                                 <a:latin typeface="Graphik Semibold"/>
                                 <a:ea typeface="Graphik Semibold"/>
                                 <a:cs typeface="Graphik Semibold"/>
