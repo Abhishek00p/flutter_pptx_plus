@@ -31,7 +31,7 @@ const template = r'''
         <p:spPr>
           <a:xfrm>
             <a:off x="190500" y="190500"/>
-            <a:ext cx="24003000" cy="1429000"/>
+            <a:ext cx="8229600" cy="1429000"/>
           </a:xfrm>
         </p:spPr>
         <p:txBody>
