@@ -118,7 +118,7 @@ const template = r'''
         <p:spPr>
           <a:xfrm>
           
-            <a:off x="6090500" y="2690500"/>
+            <a:off x="6090500" y="2890500"/>
 
             <a:ext cx="2019000" cy="619000"/>
           </a:xfrm>
