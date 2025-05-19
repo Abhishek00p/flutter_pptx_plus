@@ -82,7 +82,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:blipFill>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="18288000" y="5143500"/>
+                        <a:off x="18288000" y="1384648"/>
                         <a:ext cx="6096000" cy="3429000"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">
