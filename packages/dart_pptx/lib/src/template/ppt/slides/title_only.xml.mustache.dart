@@ -54,13 +54,39 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </p:nvPr>
                 </p:nvSpPr>
                 <p:spPr>
+                    <a:xfrm>
+                        <a:off x="190500" y="1584648"/>
+                        <a:ext cx="9753600" cy="832614"/>
+                    </a:xfrm>
                     <a:prstGeom prst="rect">
                         <a:avLst/>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
+                    <a:bodyPr lIns="50800" tIns="50800" rIns="50800" bIns="50800" anchor="l">
+                        <a:normAutofit fontScale="100000" lnSpcReduction="0"/>
+                    </a:bodyPr>
+                    <a:lstStyle>
+                        <a:lvl1pPr marL="0" marR="0" indent="0" algn="l" defTabSz="825500">
+                            <a:lnSpc>
+                                <a:spcPct val="100000"/>
+                            </a:lnSpc>
+                            <a:spcBef>
+                                <a:spcPts val="0"/>
+                            </a:spcBef>
+                            <a:spcAft>
+                                <a:spcPts val="0"/>
+                            </a:spcAft>
+                            <a:buSzTx/>
+                            <a:buNone/>
+                            <a:defRPr spc="-100">
+                                <a:latin typeface="Graphik Semibold"/>
+                                <a:ea typeface="Graphik Semibold"/>
+                                <a:cs typeface="Graphik Semibold"/>
+                                <a:sym typeface="Graphik Semibold"/>
+                            </a:defRPr>
+                        </a:lvl1pPr>
+                    </a:lstStyle>
                     {{#subtitle}}
                     {{>text-value}}
                     {{/subtitle}}
