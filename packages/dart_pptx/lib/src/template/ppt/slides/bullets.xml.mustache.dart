@@ -35,7 +35,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <p:spPr>
                      <a:xfrm>
                         <a:off x="1500500" y="1384648"/>
-                        <a:ext cx="8053600" cy="832614"/>
+                        <a:ext cx="6053600" cy="832614"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">
                         <a:avLst/>
