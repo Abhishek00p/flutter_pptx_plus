@@ -76,6 +76,9 @@ const template = r'''
           <a:prstGeom prst="downArrow">
             <a:avLst/>
           </a:prstGeom>
+           <a:solidFill>
+            <a:srgbClr val="000000"/>
+          </a:solidFill>
         </p:spPr>
       </p:sp>
 
@@ -121,6 +124,9 @@ const template = r'''
           <a:prstGeom prst="downArrow">
             <a:avLst/>
           </a:prstGeom>
+           <a:solidFill>
+            <a:srgbClr val="000000"/>
+          </a:solidFill>
         </p:spPr>
       </p:sp>
 
@@ -167,6 +173,9 @@ const template = r'''
           <a:prstGeom prst="downArrow">
             <a:avLst/>
           </a:prstGeom>
+           <a:solidFill>
+            <a:srgbClr val="000000"/>
+          </a:solidFill>
         </p:spPr>
       </p:sp>
 
@@ -214,6 +223,9 @@ const template = r'''
           <a:prstGeom prst="downArrow">
             <a:avLst/>
           </a:prstGeom>
+           <a:solidFill>
+            <a:srgbClr val="000000"/>
+          </a:solidFill>
         </p:spPr>
       </p:sp>
 
