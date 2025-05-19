@@ -153,31 +153,6 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
             </p:sp>
             <p:sp>
                 <p:nvSpPr>
-                    <p:cNvPr id="{{new-id}}" name="SLIDE SUBTITLE"/>
-                    <p:cNvSpPr txBox="1"/>
-                    <p:nvPr>
-                        <p:ph type="body" sz="quarter" idx="1"/>
-                    </p:nvPr>
-                </p:nvSpPr>
-                <p:spPr>
-                  <a:xfrm>
-                        <a:off x="1500500" y="1384648"/>
-                        <a:ext cx="5053600" cy="832614"/>
-                    </a:xfrm>
-                    <a:prstGeom prst="rect">
-                        <a:avLst/>
-                    </a:prstGeom>
-                </p:spPr>
-                <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
-                    {{#subtitle}}
-                    {{>text-value}}
-                    {{/subtitle}}
-                </p:txBody>
-            </p:sp>
-            <p:sp>
-                <p:nvSpPr>
                     <p:cNvPr id="{{new-id}}" name="Body Level One…"/>
                     <p:cNvSpPr txBox="1"/>
                     <p:nvPr>
