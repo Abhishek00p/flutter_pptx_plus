@@ -131,6 +131,14 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     {{#caption}}
                     {{>text-value}}
                     {{/caption}}
+                    {{^caption}}
+                    <a:p>
+                        <a:pPr/>
+                        <a:r>
+                            <a:t></a:t>
+                        </a:r>
+                    </a:p>
+                    {{/caption}}
                 </p:txBody>
             </p:sp>
             <p:sp>

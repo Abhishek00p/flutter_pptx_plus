@@ -24,6 +24,7 @@ Map<String, dynamic> _$SlideTitleBulletsAndPhotoToJson(
       'bullets': instance.bullets.map((e) => e.toJson()).toList(),
       'image': instance.image?.toJson(),
       'title': instance.title?.toJson(),
+      'caption': instance.caption?.toJson(),
       'subtitle': instance.subtitle?.toJson(),
       'layoutId': instance.layoutId,
       'source': instance.source,
