@@ -76,33 +76,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     {{/bullets}}
                 </p:txBody>
             </p:sp>
-            <p:sp>
-                <p:nvSpPr>
-                    <p:cNvPr id="{{new-id}}" name="Slide Subtitle"/>
-                    <p:cNvSpPr txBox="1"/>
-                    <p:nvPr>
-                        <p:ph type="body" idx="21"/>
-                    </p:nvPr>
-                </p:nvSpPr>
-                <p:spPr>
-                    <a:prstGeom prst="rect">
-                        <a:avLst/>
-                    </a:prstGeom>
-                    <a:extLst>
-                        <a:ext uri="{C572A759-6A51-4108-AA02-DFA0A04FC94B}">
-                            <ma14:wrappingTextBoxFlag val="1"
-                                xmlns:ma14="http://schemas.microsoft.com/office/mac/drawingml/2011/main"/>
-                        </a:ext>
-                    </a:extLst>
-                </p:spPr>
-                <p:txBody>
-                    <a:bodyPr/>
-                    <a:lstStyle/>
-                    {{#subtitle}}
-                    {{>text-value}}
-                    {{/subtitle}}
-                </p:txBody>
-            </p:sp>
+           
             {{>speaker-notes}}
         </p:spTree>
     </p:cSld>
