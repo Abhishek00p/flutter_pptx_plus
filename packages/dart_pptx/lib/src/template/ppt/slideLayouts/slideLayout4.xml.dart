@@ -113,15 +113,20 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     </a:prstGeom>
                 </p:spPr>
                 <p:txBody>
-                    <a:bodyPr/>
+                    <a:bodyPr lIns="50800" tIns="50800" rIns="50800" bIns="50800" anchor="ctr">
+                        <a:normAutofit fontScale="100000" lnSpcReduction="0"/>
+                    </a:bodyPr>
                     <a:lstStyle>
-                        <a:lvl1pPr marL="0" indent="0" algn="ctr" defTabSz="825500">
+                        <a:lvl1pPr marL="0" marR="0" indent="0" algn="ctr" defTabSz="825500">
                             <a:lnSpc>
                                 <a:spcPct val="100000"/>
                             </a:lnSpc>
                             <a:spcBef>
                                 <a:spcPts val="0"/>
                             </a:spcBef>
+                            <a:spcAft>
+                                <a:spcPts val="0"/>
+                            </a:spcAft>
                             <a:buSzTx/>
                             <a:buNone/>
                             <a:defRPr spc="-100">
