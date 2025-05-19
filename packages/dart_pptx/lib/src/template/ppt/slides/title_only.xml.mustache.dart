@@ -18,7 +18,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
             </p:nvGrpSpPr>
             <p:grpSpPr>
                 <a:xfrm>
-                    <a:off x="0" y="0"/>
+                    <a:off x="0" y="200000"/>
                     <a:ext cx="0" cy="0"/>
                     <a:chOff x="0" y="0"/>
                     <a:chExt cx="0" cy="0"/>
@@ -57,7 +57,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:nvSpPr>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="190500" y="1584648"/>
+                        <a:off x="190500" y="1784648"/>
                         <a:ext cx="8053600" cy="2832614"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">

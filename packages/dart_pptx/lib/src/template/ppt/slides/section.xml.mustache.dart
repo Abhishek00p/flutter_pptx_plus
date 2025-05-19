@@ -36,6 +36,12 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:prstGeom prst="rect">
                         <a:avLst/>
                     </a:prstGeom>
+                    <a:xfrm>
+                        <a:off x="0" y="200000"/>
+                        <a:ext cx="0" cy="0"/>
+                        <a:chOff x="0" y="0"/>
+                        <a:chExt cx="0" cy="0"/>
+                    </a:xfrm>
                 </p:spPr>
                 <p:txBody>
                     <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>

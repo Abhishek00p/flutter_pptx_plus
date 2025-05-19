@@ -43,7 +43,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="690500"/>
+            <a:off x="3000000" y="1190500"/>
             <a:ext cx="4000000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -70,7 +70,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4800000" y="1416000"/>
+            <a:off x="4800000" y="1926000"/>
             <a:ext cx="200000" cy="200000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow">
@@ -91,7 +91,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="1941500"/>
+            <a:off x="3000000" y="2661500"/>
             <a:ext cx="4000000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -118,7 +118,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4800000" y="2567000"/>
+            <a:off x="4800000" y="3397000"/>
             <a:ext cx="200000" cy="200000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow">
@@ -139,7 +139,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="3092500"/>
+            <a:off x="3000000" y="4132500"/>
             <a:ext cx="4000000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -167,7 +167,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4800000" y="3814000"/>
+            <a:off x="4800000" y="4868000"/>
             <a:ext cx="200000" cy="200000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow">
@@ -188,7 +188,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="4214000"/>
+            <a:off x="3000000" y="4868000"/>
             <a:ext cx="4000000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
