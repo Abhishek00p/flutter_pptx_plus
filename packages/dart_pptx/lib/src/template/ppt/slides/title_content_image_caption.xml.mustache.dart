@@ -59,7 +59,7 @@ const template = r'''
         <p:spPr>
           <a:xfrm>
             <a:off x="12090500" y="2290500"/>
-            <a:ext cx="5832614" cy="2832614"/>
+            <a:ext cx="4832614" cy="2832614"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
             <a:avLst/>
