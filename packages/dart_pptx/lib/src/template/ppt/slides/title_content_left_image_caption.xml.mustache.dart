@@ -1,4 +1,3 @@
-
 const template = r'''
 <p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
   <p:cSld name="{{name}}">
@@ -60,7 +59,7 @@ const template = r'''
         <p:spPr>
           <a:xfrm>
             <a:off x="590500" y="2290500"/>
-            <a:ext cx="11029000" cy="8029000"/>
+            <a:ext cx="2832614" cy="2832614"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
             <a:avLst/>
