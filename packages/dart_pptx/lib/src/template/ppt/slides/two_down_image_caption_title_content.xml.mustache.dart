@@ -64,7 +64,7 @@ const template = r'''
         </p:blipFill>
         <p:spPr>
           <a:xfrm>
-            <a:off x="757200" y="3043075"/>
+            <a:off x="757200" y="2943075"/>
             <a:ext cx="2562400" cy="1528850"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -125,7 +125,7 @@ const template = r'''
         </p:blipFill>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4724400" y="3043075"/>
+            <a:off x="4724400" y="2943075"/>
             <a:ext cx="2562400" cy="1528850"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -180,7 +180,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="457200" y="1543075"/>
+            <a:off x="457200" y="1343075"/>
             <a:ext cx="8229600" cy="1257250"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
