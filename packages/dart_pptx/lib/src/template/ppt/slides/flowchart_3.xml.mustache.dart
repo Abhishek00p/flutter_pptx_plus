@@ -53,7 +53,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet1}}
           {{>text-value}}
@@ -101,7 +101,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet2}}
           {{>text-value}}
@@ -149,7 +149,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet3}}
           {{>text-value}}

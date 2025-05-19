@@ -53,7 +53,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet1}}
           {{>text-value}}
@@ -101,7 +101,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet2}}
           {{>text-value}}
@@ -149,7 +149,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet3}}
           {{>text-value}}
@@ -167,7 +167,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="4800000" y="3818000"/>
+            <a:off x="4800000" y="3814000"/>
             <a:ext cx="200000" cy="200000"/>
           </a:xfrm>
           <a:prstGeom prst="downArrow">
@@ -188,7 +188,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="3000000" y="4218000"/>
+            <a:off x="3000000" y="4214000"/>
             <a:ext cx="4000000" cy="400000"/>
           </a:xfrm>
           <a:prstGeom prst="rect">
@@ -198,7 +198,7 @@ const template = r'''
         <p:txBody>
           <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
           <a:defPPr algn="ctr">
-            <a:defRPr sz="1800"/>
+            <a:defRPr sz="1400"/>
           </a:defPPr>
           {{#bullet4}}
           {{>text-value}}
