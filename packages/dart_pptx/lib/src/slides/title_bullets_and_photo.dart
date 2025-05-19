@@ -15,6 +15,7 @@ class SlideTitleBulletsAndPhoto extends Slide {
     this.image,
     this.bullets = const [],
     this.subtitle,
+    this.caption,
     super.speakerNotes,
     super.slideNumber,
   });
@@ -22,6 +23,7 @@ class SlideTitleBulletsAndPhoto extends Slide {
   List<TextValue> bullets;
   ImageReference? image;
   TextValue? title;
+  TextValue? caption;
   TextValue? subtitle;
 
   @override
