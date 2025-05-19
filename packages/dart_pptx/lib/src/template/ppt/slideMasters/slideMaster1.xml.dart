@@ -437,7 +437,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
             </a:lvl9pPr>
         </p:titleStyle>
         <p:bodyStyle>
-            <a:lvl1pPr marL="546100" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl1pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -463,7 +463,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl1pPr>
-            <a:lvl2pPr marL="1092200" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl2pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -489,7 +489,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl2pPr>
-            <a:lvl3pPr marL="1638300" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl3pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -515,7 +515,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl3pPr>
-            <a:lvl4pPr marL="2184400" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl4pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -541,7 +541,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl4pPr>
-            <a:lvl5pPr marL="2730500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl5pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -567,7 +567,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl5pPr>
-            <a:lvl6pPr marL="3276600" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl6pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -593,7 +593,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl6pPr>
-            <a:lvl7pPr marL="3822700" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl7pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -619,7 +619,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl7pPr>
-            <a:lvl8pPr marL="4368800" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl8pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
@@ -645,7 +645,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:sym typeface="Canela Text Regular"/>
                 </a:defRPr>
             </a:lvl8pPr>
-            <a:lvl9pPr marL="4914900" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
+            <a:lvl9pPr marL="190500" marR="0" indent="-546100" algn="l" defTabSz="2438337" rtl="0" latinLnBrk="0">
                 <a:lnSpc>
                     <a:spcPct val="90000"/>
                 </a:lnSpc>
