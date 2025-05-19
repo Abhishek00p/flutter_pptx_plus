@@ -105,7 +105,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 </p:nvSpPr>
                 <p:spPr>
                     <a:xfrm>
-                        <a:off x="519200" y="2384648"/>
+                        <a:off x="190500" y="1584648"/>
                         <a:ext cx="9753600" cy="832614"/>
                     </a:xfrm>
                     <a:prstGeom prst="rect">
