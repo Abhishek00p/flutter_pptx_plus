@@ -105,7 +105,52 @@ const template = r'''
           {{/bullet2}}
         </p:txBody>
       </p:sp>
-      
+
+       <!-- Arrow (down) -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="5" name="Arrow2"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4800000" y="3100000"/>
+            <a:ext cx="400000" cy="400000"/>
+          </a:xfrm>
+          <a:prstGeom prst="downArrow">
+            <a:avLst/>
+          </a:prstGeom>
+        </p:spPr>
+      </p:sp>
+
+      <!-- Third bullet (centered) -->
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="5" name="Bullet3"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3000000" y="3600000"/>
+            <a:ext cx="4000000" cy="600000"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square" anchor="t" anchorCtr="0"/>
+          <a:defPPr algn="ctr">
+            <a:defRPr sz="1800"/>
+          </a:defPPr>
+          {{#bullet3}}
+          {{>text-value}}
+          {{/bullet3}}
+        </p:txBody>
+      </p:sp>
+
 
     </p:spTree>
   </p:cSld>
