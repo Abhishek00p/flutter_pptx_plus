@@ -1,3 +1,5 @@
+import 'package:dart_pptx/src/slides/flowchart.dart';
+
 import 'classes.dart';
 import 'powerpoint.dart';
 
@@ -290,4 +292,15 @@ extension SlideTemplates on PowerPoint {
         contentDown: contentDown,
         speakerNotes: TextValue.uniform(notes)));
   }
+
+  Slide addFlowchartSlide({
+    TextValue? title,
+    List<TextValue> bullets = const [],
+    String notes = '',
+  }) =>
+      addSlide(SlideFlowchart(
+        title: title,
+        bullets: bullets,
+        speakerNotes: TextValue.uniform(notes),
+      ));
 }
