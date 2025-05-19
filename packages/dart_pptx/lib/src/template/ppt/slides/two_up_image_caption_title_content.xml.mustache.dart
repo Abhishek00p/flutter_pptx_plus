@@ -30,7 +30,7 @@ const template = r'''
         </p:nvSpPr>
         <p:spPr>
           <a:xfrm>
-            <a:off x="457200" y="357200"/>
+            <a:off x="190500" y="357200"/>
             <a:ext cx="8229600" cy="1285875"/>
           </a:xfrm>
         </p:spPr>
