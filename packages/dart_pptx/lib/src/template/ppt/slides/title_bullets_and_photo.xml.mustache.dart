@@ -41,7 +41,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                     <a:bodyPr/>
                     <a:lstStyle>
                         <a:lvl1pPr defTabSz="2267711">
-                            <a:defRPr spc="-78" sz="7812"/>
+                            <a:defRPr spc="-78" sz="1400"/>
                         </a:lvl1pPr>
                     </a:lstStyle>
                     {{#title}}

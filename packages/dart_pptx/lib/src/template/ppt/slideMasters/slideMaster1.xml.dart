@@ -161,7 +161,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                             <a:lnSpc>
                                 <a:spcPct val="100000"/>
                             </a:lnSpc>
-                            <a:defRPr sz="2000">
+                            <a:defRPr sz="800">
                                 <a:solidFill>
                                     <a:srgbClr val="5E5E5E"/>
                                 </a:solidFill>
@@ -216,7 +216,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -242,7 +242,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -268,7 +268,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -294,7 +294,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -320,7 +320,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -346,7 +346,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -372,7 +372,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -398,7 +398,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -424,7 +424,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="8400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="-84" strike="noStrike" sz="2400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -452,7 +452,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -478,7 +478,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -504,7 +504,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -530,7 +530,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -556,7 +556,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -582,7 +582,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -608,7 +608,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -634,7 +634,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -660,7 +660,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buChar char="•"/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="4400" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="1400" u="none">
                     <a:solidFill>
                         <a:srgbClr val="000000"/>
                     </a:solidFill>
@@ -688,7 +688,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -714,7 +714,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -740,7 +740,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -766,7 +766,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -792,7 +792,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -818,7 +818,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -844,7 +844,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -870,7 +870,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>
@@ -896,7 +896,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                 <a:buFontTx/>
                 <a:buNone/>
                 <a:tabLst/>
-                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="2000" u="none">
+                <a:defRPr b="0" baseline="0" cap="none" i="0" spc="0" strike="noStrike" sz="800" u="none">
                     <a:solidFill>
                         <a:schemeClr val="tx1"/>
                     </a:solidFill>

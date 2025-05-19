@@ -77,7 +77,7 @@ const String template = r'''<?xml version="1.0" encoding="UTF-8"?>
                             </a:spcBef>
                             <a:buSzTx/>
                             <a:buNone/>
-                            <a:defRPr sz="8400">
+                            <a:defRPr sz="2400">
                                 <a:latin typeface="Canela Bold"/>
                                 <a:ea typeface="Canela Bold"/>
                                 <a:cs typeface="Canela Bold"/>
